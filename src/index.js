@@ -37,7 +37,7 @@ app.get('/get', (req,res) => {
 });
 
 app.get('/hmset', (req,res) => {
-    client.select('15', function(error){
+    client.select('0', function(error){
         if(error) {
             console.log(error);
         } else {
@@ -58,7 +58,7 @@ app.get('/hmset', (req,res) => {
 });
 
 app.get('/hmget', (req,res) => {
-    client.select('15', function(error){
+    client.select('0', function(error){
         if(error) {
             console.log(error);
         } else {
@@ -74,7 +74,7 @@ app.get('/hmget', (req,res) => {
 });
 
 app.get('/lpush',(req,res) => {
-    client.select('14', function(error){
+    client.select('2', function(error){
         if(error) {
             console.log(error);
         } else {
